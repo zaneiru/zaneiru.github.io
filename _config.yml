@@ -8,6 +8,12 @@ email:
 description: A simple and awesome blog theme powered by jekyll.
 url: # the base hostname & protocol for your site
 
+<<<<<<< HEAD
+=======
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+>>>>>>> ec4b9e359140f0b2dd62c7fd8f3666dddc8c4e23
 
 #
 ###################################
