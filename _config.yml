@@ -3,10 +3,10 @@ title: Travelog
 subtitle: "Journal of [name]"
 email: your-email@domain.com
 description: "Make the footer happy by entering a short description about yourself here"
-baseurl: ""
-url: "http://yourdomain.com"
-twitter_username: "rowanoulton"
-github_username:  "rowanoulton"
+baseurl: /
+url: "http://zaneiru.github.io"
+twitter_username: "zaneiru"
+github_username:  "zaneiru"
 instagram_username: "rowanoulton"
 
 # Build settings
@@ -14,7 +14,7 @@ markdown: kramdown
 permalink: pretty
 
 # Pagination
-paginate: 5
+paginate: 10
 
 # Sass
 sass:
