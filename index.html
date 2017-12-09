@@ -1,24 +1,263 @@
+
+
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta http-equiv="x-ua-compatible" content="ie=edge"><meta name="naver-site-verification" content="22c5b4ef3bfda7fc6100671413989219de7a4ac8"/><meta property="og:title" content="Jekyll Blog 추천 테마 5가지"><meta property="og:type" content="article"><meta property="og:image" content="https://isme2n.github.io/assets/img/logo.png"><meta property="og:image:width" content="640" /><meta property="og:image:height" content="360" /><title>Jekyll Blog 추천 테마 5가지 &middot; Aiden</title><meta name="description" content="요즘 Github Pages 기반의 블로그가 많아지고있다. "><meta property="og:description" content="요즘 Github Pages 기반의 블로그가 많아지고있다. "><link rel="canonical" href="https://isme2n.github.io/devlog/2017/03/09/Blog-Jekyll-theme/"><meta property="og:url" content="https://isme2n.github.io/devlog/2017/03/09/Blog-Jekyll-theme/"><link rel="alternate" type="application/atom+xml" title="Aiden Feed" href="https://isme2n.github.io/feed.xml"><link rel="prev" href="https://isme2n.github.io/devlog/2017/03/03/mongoDB-backup-restore/"><link rel="next" href="https://isme2n.github.io/devlog/2017/03/09/Blog-Jekyll/"><link rel="apple-touch-icon" href="https://isme2n.github.io/apple-touch-icon.png"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?"> <script> !function(n,e){function t(n,e){n.onload=function(){this.onerror=this.onload=null,e(null,n)},n.onerror=function(){this.onerror=this.onload=null,e(new Error("Failed to load "+this.src),n)}}function o(n,e){n.onreadystatechange=function(){"complete"!=this.readyState&&"loaded"!=this.readyState||(this.onreadystatechange=null,e(null,n))}}n._loaded=!1,n.loadJSDeferred=function(a,d){function r(){n._loaded=!0;var r=e.createElement("script");r.src=a,d&&(("onload"in r?t:o)(r,d),r.onload||t(r,d));var l=e.getElementsByTagName("script")[0];l.parentNode.insertBefore(r,l)}n._loaded?r():n.addEventListener?n.addEventListener("load",r,!1):n.attachEvent?n.attachEvent("onload",r):n.onload=r}}(window,document); !function(e){"use strict";var n=function(n,t,o){function i(e){if(a.body)return e();setTimeout(function(){i(e)})}function r(){l.addEventListener&&l.removeEventListener("load",r),l.media=o||"all"}var d,a=e.document,l=a.createElement("link");if(t)d=t;else{var f=(a.body||a.getElementsByTagName("head")[0]).childNodes;d=f[f.length-1]}var s=a.styleSheets;l.rel="stylesheet",l.href=n,l.media="only x",i(function(){d.parentNode.insertBefore(l,t?d:d.nextSibling)});var u=function(e){for(var n=l.href,t=s.length;t--;)if(s[t].href===n)return e();setTimeout(function(){u(e)})};return l.addEventListener&&l.addEventListener("load",r),l.onloadcssdefined=u,u(r),l};"undefined"!=typeof exports?exports.loadCSS=n:e.loadCSS=n}("undefined"!=typeof global?global:this); !function(t){if(t.loadCSS){var e=loadCSS.relpreload={};if(e.support=function(){try{return t.document.createElement("link").relList.supports("preload")}catch(t){return!1}},e.poly=function(){for(var e=t.document.getElementsByTagName("link"),r=0;r<e.length;r++){var n=e[r];"preload"===n.rel&&"style"===n.getAttribute("as")&&(t.loadCSS(n.href,n,n.getAttribute("media")),n.rel=null)}},!e.support()){e.poly();var r=t.setInterval(e.poly,300);t.addEventListener&&t.addEventListener("load",function(){e.poly(),t.clearInterval(r)}),t.attachEvent&&t.attachEvent("onload",function(){t.clearInterval(r)})}}}(this); window.disablePushState = false; window.disableDrawer = false; </script> <!--[if lt IE 9]> <script src="https://unpkg.com/html5shiv/dist/html5shiv.min.js"></script> <![endif]--> <!--[if gt IE 8]><!----><style> article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}*{box-sizing:border-box}html,body{margin:0;padding:0}html{font-size:16px;line-height:1.75}body{color:#333;background-color:#fff;overflow-y:scroll}a{text-decoration:none}.lead{margin-left:-1rem;margin-right:-1rem}img,.img{display:block;max-width:100%;margin-bottom:1rem;border:none}img.lead,.img.lead{max-width:calc(100% + 2rem);width:calc(100% + 2rem)}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.heading{font-weight:bold;text-rendering:optimizeLegibility}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{margin:1.6rem 0 1rem;line-height:1.6}h1,.h1{font-size:2rem;line-height:1.25}h2,.h2{font-size:1.5rem}h3,.h3{font-size:1.17em}p{margin-top:0;margin-bottom:1rem}p.lead{font-size:1.25rem;font-weight:300;padding:0 1rem}ul,ol,dl{margin-top:0;margin-bottom:1rem}ul,ol{padding-left:1.25rem}hr{position:relative;margin:1.5rem 0;border:0;border-top:1px solid #eee}.hr{padding-bottom:.5rem;border-bottom:1px solid #eee;margin-bottom:1.5rem}h4,h5,h6,.h4,.h5,.h6{margin-bottom:0.5rem;font-size:1rem}table{margin-bottom:1rem;width:100%;width:calc(100% + 2rem);margin-left:-1rem;border:1px solid #e5e5e5;border-collapse:collapse;border-spacing:0}td,th{padding:.25rem .5rem;border:1px solid #e5e5e5}td:first-child,th:first-child{padding-left:1rem}td:last-child,th:last-child{padding-right:1rem}thead+tbody,tbody+tbody,tfoot{border-top:3px double #e5e5e5}tbody tr:nth-child(odd) td,tbody tr:nth-child(odd) th{background-color:#f9f9f9}footer{margin-bottom:2rem}.page,.post{margin-bottom:3em}.page li+li,.post li+li{margin-top:.25rem}.page>header,.post>header{margin-bottom:2rem}.page-title,.post-title{margin-top:0}.post-date{display:block;margin-top:-0.5rem;margin-bottom:1rem;color:#9a9a9a}.related-posts{padding-left:0;list-style:none}.related-posts>li,.related-posts>li+li{margin-top:1rem}.related-posts>li>small,.related-posts>li+li>small{font-size:75%;color:#9a9a9a}.message{margin-bottom:1rem;padding:1rem;color:#787878;background-color:#f9f9f9;margin-left:-1rem;margin-right:-1rem}body,main{position:relative;overflow-x:hidden}@media screen{body::before{content:'';background:#e5e5e5;position:absolute;left:0;top:0;bottom:0}}@media screen and (min-width: 40em){html{font-size:17px}}@media screen and (min-width: 54em){html{font-size:16px}}@media screen and (min-width: 88em){html{font-size:17px}}@media screen and (min-width: 125em){html{font-size:18px}}.sr-only{display:none}.clearfix,.sidebar-social::after,.clearafter::after{content:"";display:table;clear:both}a,.a{position:relative;padding-bottom:.15rem;border-style:hidden}.img{overflow:hidden;background-color:#f9f9f9}.img>img{margin:0;width:100%;height:100%}.sixteen-nine{position:relative}.sixteen-nine::before{display:block;content:"";width:100%;padding-top:56.25%}.sixteen-nine>*{position:absolute;top:0;left:0;right:0;bottom:0}h1+hr,h2+hr,h3+hr,h4+hr,h5+hr,h6+hr{margin-top:0}.fade-in{animation-duration:500ms;animation-name:fade-in;animation-fill-mode:forwards}@keyframes fade-in{from{transform:translateY(-2rem);opacity:0}50%{transform:translateY(-2rem);opacity:0}to{transform:translateY(0);opacity:1}}.mb6{margin-bottom:10rem}.sidebar{color:rgba(255,255,255,0.75);text-align:left}.sidebar::before{content:"";position:absolute;z-index:2;top:0;left:0;bottom:0;right:0;background:linear-gradient(to bottom, rgba(32,32,32,0) 0%, rgba(32,32,32,0.5) 100%)}.sidebar a{color:#fff;border-bottom-color:rgba(255,255,255,0.2)}.right-side{width:100%;margin-left:auto;margin-right:auto}.right-side .ad-first{text-align:center}@media screen{.right-side{max-width:38rem;min-height:100vh}.right-side .ad-second{display:none}}@media screen and (min-width: 54em){.right-side{margin-left:20rem;margin-right:1rem;padding:4rem 1rem 12rem}.right-side .ad-second{text-align:center;display:block}}@media screen and (min-width: 72em){.right-side{margin-left:22rem;max-width:42rem}}@media screen and (min-width: 88em){.right-side{width:162px;margin-left:0rem;margin-right:0rem;padding:0rem;margin-top:10rem;display:block;float:left}}@media screen and (min-width: 96em){.right-side{width:300px;margin-right:0rem}}#_yDrawer{position:relative}@media screen{#_yDrawer{min-height:640px;min-height:100vh}}@media screen and (min-width: 54em){#_yDrawer{width:18rem;margin-left:0}}.sidebar-bg{position:absolute;height:100%;overflow:hidden;top:0;right:0;bottom:0;left:0;background:#202020 center / cover}.sidebar-box{display:flex;justify-content:center}.sidebar-sticky{position:relative;z-index:3}@media screen{.sidebar-sticky{-ms-overflow-style:none;overflow:-moz-scrollbars-none;height:100%;overflow:auto;position:absolute;padding:3rem 0rem;right:2.5rem;left:2.5rem}}.sidebar-sticky::-webkit-scrollbar{display:none}.sidebar-about>h1{color:#fff;font-size:2rem}.sidebar-nav>ul{list-style:none;padding-left:0;margin-bottom:.5rem}a.sidebar-nav-item{width:100%;font-weight:normal;display:block;line-height:1.75;padding:.25rem 0;border-bottom:1px solid rgba(255,255,255,0.2)}a.sidebar-nav-subitem{font-weight:normal;display:block;line-height:1.75;padding:.25rem 0;border-bottom:1px solid rgba(255,255,255,0.2)}@media screen{.y-drawer-scrim{z-index:2}.y-drawer-content{width:18rem;left:-18rem;z-index:3}}.sidebar-social{margin-bottom:.5rem}.sidebar-social>ul{list-style:none;padding-left:0;margin:0 -.25rem}.sidebar-social>ul>li{float:left}.sidebar-social>ul>li>a{display:inline-block;text-align:center;font-size:1.6rem;line-height:3rem;width:3.1249rem;height:4rem;padding:.5rem 0}.sidebar-social>ul li+li{margin-top:0}.fixed-top{position:fixed;top:0;left:0;width:100%;z-index:1}.navbar>.content{padding-top:0;padding-bottom:0;min-height:0;height:0}.menu{display:inline-block;padding:1.75rem 1.5rem;border-bottom:none;margin-left:-1.5rem;color:#9a9a9a !important}.menu::after{content:"\2630"}@media screen and (min-width: 54em){.menu{padding:1.25rem 1.5rem;position:absolute;left:-9999px}.menu:focus{position:static}}.animation-main{pointer-events:none}.loading{display:none}@media print{.menu{display:none}}.animation-main{opacity:0;will-change:opacity}.loading{position:absolute;top:0;right:0;padding:5.25rem 4.5rem;transform-origin:top right;transform:scale(0.33)}.content{position:relative;margin-left:auto;margin-right:auto;padding:5rem 1rem 12rem}@media screen{.content{min-height:100vh}}@media screen and (min-width: 54em){.content{padding:4rem 1rem 12rem;margin-left:19rem;margin-right:3rem}}@media screen and (min-width: 72em){.content{max-width:42rem;margin-left:21rem}}@media screen and (min-width: 88em){.content{float:left;width:100%;margin-left:22rem;margin-right:5rem}}@media screen and (min-width: 96em){.content{max-width:44rem}}@media screen and (min-width: 102em){.content{margin-left:25rem;margin-right:8rem}}.me{width:6.5rem;height:6.5rem;align-self:center;margin-right:20px;border-radius:100%;position:relative}@media screen and (min-width: 40em){.me{width:7rem;height:7rem}}@media screen and (min-width: 54em){.me{width:6.5rem;height:6.5rem}}@media screen and (min-width: 72em){.me{width:7rem;height:7rem}}main>footer{width:100%;position:absolute;bottom:0;left:0;right:0;padding:0 1rem;color:#9a9a9a;font-size:smaller;text-align:center}main>footer>p{margin-bottom:0}html{font-family:'Sans-serif'}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.heading{font-family:'Sans-serif'}</style><link rel="preload" href="https://isme2n.github.io/assets/css/hydejack.css?v=6.4.0" as="style" onload="this.rel='stylesheet'"><style id="_pageStyle"> .content a{color:#4f86aa;border-color:rgba(79,134,170,0.2)}.content a:hover{border-color:#4f86aa}:focus{outline-color:#4f86aa}::selection{color:#fff;background:#4f86aa}::-moz-selection{color:#fff;background:#4f86aa}</style><noscript><link rel="stylesheet" href="https://isme2n.github.io/assets/css/hydejack.css?v=6.4.0"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"><style> html { font-family: 'Lato', 'Sans-serif' } h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .heading { font-family: 'Lato', 'Sans-serif' }</style><link rel="stylesheet" href="https://isme2n.github.io/assets/icomoon/style.css"> </noscript> <!--<![endif]--><body><div class="navbar fixed-top"><div class="content"> <span class="sr-only">Jump to:</span> <a id="_menu" class="menu no-hover" href="#_title"> <span class="sr-only">Menu</span> </a></div></div><div id="_yPushState"><div class="fade-in"><main id="_main" class="content" role="main" data-color="#4f86aa" data-image="/assets/img/nap.jpg"><article id="post-devlog/2017/03/09/Blog-Jekyll-theme" class="post" role="article"><header><h1 class="post-title"> Jekyll Blog 추천 테마 5가지</h1><p class="post-date heading"> <time datetime="2017-03-09T00:00:00+00:00">09 Mar 2017</time> in <a href="/category/devlog/" data-flip="title">Devlog</a> on <a href="/tag/devlog-jekyll/" data-flip="title">Jekyll</a>, <span>Blog</span>, <span>Theme</span>, <span>Devlog</span><div class="hr" style="padding-bottom:0"></div></header><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><div class="markdown-body"><style> .myAd1190 { display:block; width:98%; height: 280px; } @media(min-width: 600px) { .myAd1190 { display: none; } }</style><ins class="adsbygoogle myAd1190" data-ad-client="ca-pub-9134477021095729" data-ad-slot="6559875097" ></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script> <br/><p>요즘 Github Pages 기반의 블로그가 많아지고있다.<p>Jekyll은 Github Pages를 사용하기 쉽게 도와주는 스태틱 사이트 제너레이터이다.<p>나도 현재 Jekyll을 사용하고 있고 커스텀하기도 쉽고 이미 예쁘게 만들어져 있는 테마도 많다.<p>이전에 블로그 테마를 고를때 고려해야하는 점들을 소개했는데, 이번엔 직접 추천을 해보려한다.<h3 id="테마">테마</h3><hr /><p>지킬 테마는 <a href="http://jekyllthemes.org/">이 곳</a>에서 확인할 수 있다.<p>테마는 이미 사람들이 만들어놓은 틀을 이야기한다. 괜찮은 테마를 받아서 살짝 커스터마이징하면 예쁘고 기능도 탄탄한 사이트를 만들 수 있다.<p>대부분이 반응형으로 구현되어 있다.<h3 id="블로그엔-어떤-테마">블로그엔 어떤 테마?</h3><hr /><p><a href="https://isme2n.github.io/jekyll/2017/03/09/Blog-Jekyll/">블로그 테마를 고를때 고려해야 할 점 5가지</a>는 아래와 같다.<ul><li><p>첫째, 반응형이어야 한다.<li><p>둘째, 리니어 레이아웃.<li><p>셋째, 공유하기 버튼.<li><p>넷째, 서체.<li><p>다섯째, 댓글.</ul><h3 id="추천-테마">추천 테마</h3><hr /><p>거의 모든 테마를 직접 돌아다녀보고 분석했다. 그 중 추천할만한 테마를 소개해보려 한다.<p>소개하는 모든 테마는 이름을 클릭하면 데모페이지로 이동한다.<h3 id="jasper"><a href="https://biomadeira.github.io/jasper/">Jasper</a></h3><p>한동안 거의 세계를 재패했던 고스트의 대표적인 테마의 Jekyll판이다. 고스트는 설치형 블로그이기 때문에 진입장벽을 느끼는 분들이 많은데, 그런 때 이 테마는 정말 딱이다.<p>반응형이며, 리니어하고, 기본적으로 트위터, 페이스북, 구글플러스 공유가 지원되고, 서체도 제목은 산세리프, 내용은 세리프체로 깔끔하다. 여백도 적당하다.<p>댓글은 지원하지 않지만 개발자라면 댓글 붙이는데 몇분 걸리지 않는다.<h3 id="long-haul"><a href="http://brianmaierjr.com/long-haul/">Long Haul</a></h3><p>요즘 디자인트랜드는 ‘기존의 것들 박살내기’다. 정사각형에서, 그리드에서 벗어나자 뭐 이런내용인데 가장 쉽게 접할 수 있는게 사선또는 다른 도형을 본따서 레이아웃을 조금 바꾸는 거다.<p>그런의미인지 이 Long Haul도 상단 네비게이션바가 사선이다.<p>반응형이고, 리니어하며 깔끔한 레이아웃을 지녔다.<p>공유하기와 댓글은 지원하지 않지만 역시 개발자라면 몇분이면 달 수 있다.<h3 id="vanilla-bean-creme"><a href="http://richbray.me/frap/vbc/">Vanilla Bean Creme</a></h3><p>이 테마는 좀 재미있다. 오직 글. 거의 글을 위해 만들어진 테마라고 할 수 있을 것 같다. 그것도 꽤 긴 분량의 글을 소화했을 때 가장 아름다운 레이아웃을 가지고 있다.<p>만약에 소설이나 글을 적는게 취미라면, 글에만 집중할 수 있는 이 테마가 최선의 선택아닐까.<p>반응형, 리니어에 완전 깔끔하다.<p>공유하기와 댓글은 지원하지 않는다.<h3 id="clean-blog"><a href="https://blackrockdigital.github.io/startbootstrap-clean-blog/">Clean Blog</a></h3><p>이 테마는 현재 내가 쓰고있는 테마이다. 서체도 깔끔하고 레이아웃도 좋다. 흠이라면 줄간격이나 세세한 것들이 좀 아쉽긴한데, 아주 좋은 테마라고 생각한다.<p>나는 이 테마를 조금 커스텀해서 사용하고있다. 공유하기버튼과 댓글기능을 추가해서 사용중이다.<p>반응형이고 리니어이며 서체도 괜찮고 깔끔하다.<p>공유하기와 댓글은 지원하지 않는다.<h3 id="centrarium"><a href="http://bencentra.com/centrarium/">Centrarium</a></h3><p>내가 아마 Clean Blog테마를 사용하지 않았다면 이 테마를 사용하고 있었을거다. 사실 아직도 고민중이다. 서체가 제목은 산세리프였으면 좋겠는데, 그거야 커스텀하면 될 것 같다.<p>반응형이고 리니어에 아주 깔끔하다. 공유하기와 댓글도 지원한다.<h3 id="정리하며">정리하며</h3><hr /><p>사실 꽤나 멋지다라고 생각한 테마들은 더 있다. 잠깐 나열해 보면.<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-Skinny Bones
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="naver-site-verification" content="22c5b4ef3bfda7fc6100671413989219de7a4ac8"/>
 
-Demo : https://mmistakes.github.io/skinny-bones-jekyll/
+    <meta property="og:type" content="article">
 
-Joon
+    <meta property="og:image:width" content="640" />
+    <meta property="og:image:height" content="360" />
+    <title>Jekyll Blog 추천 테마 5가지 &middot; Aiden</title>
+    <meta name="description" content="요즘 Github Pages 기반의 블로그가 많아지고있다. ">
+    <meta property="og:description" content="요즘 Github Pages 기반의 블로그가 많아지고있다. ">
+    <link rel="canonical" href="https://isme2n.github.io/devlog/2017/03/09/Blog-Jekyll-theme/">
+    <meta property="og:url" content="https://isme2n.github.io/devlog/2017/03/09/Blog-Jekyll-theme/">
+    <link rel="alternate" type="application/atom+xml" title="Aiden Feed" href="{{ url }}/feed.xml">
 
-Demo : http://mikevormwald.com/joon/
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+    <script> !function(n,e){function t(n,e){n.onload=function(){this.onerror=this.onload=null,e(null,n)},n.onerror=function(){this.onerror=this.onload=null,e(new Error("Failed to load "+this.src),n)}}function o(n,e){n.onreadystatechange=function(){"complete"!=this.readyState&&"loaded"!=this.readyState||(this.onreadystatechange=null,e(null,n))}}n._loaded=!1,n.loadJSDeferred=function(a,d){function r(){n._loaded=!0;var r=e.createElement("script");r.src=a,d&&(("onload"in r?t:o)(r,d),r.onload||t(r,d));var l=e.getElementsByTagName("script")[0];l.parentNode.insertBefore(r,l)}n._loaded?r():n.addEventListener?n.addEventListener("load",r,!1):n.attachEvent?n.attachEvent("onload",r):n.onload=r}}(window,document); !function(e){"use strict";var n=function(n,t,o){function i(e){if(a.body)return e();setTimeout(function(){i(e)})}function r(){l.addEventListener&&l.removeEventListener("load",r),l.media=o||"all"}var d,a=e.document,l=a.createElement("link");if(t)d=t;else{var f=(a.body||a.getElementsByTagName("head")[0]).childNodes;d=f[f.length-1]}var s=a.styleSheets;l.rel="stylesheet",l.href=n,l.media="only x",i(function(){d.parentNode.insertBefore(l,t?d:d.nextSibling)});var u=function(e){for(var n=l.href,t=s.length;t--;)if(s[t].href===n)return e();setTimeout(function(){u(e)})};return l.addEventListener&&l.addEventListener("load",r),l.onloadcssdefined=u,u(r),l};"undefined"!=typeof exports?exports.loadCSS=n:e.loadCSS=n}("undefined"!=typeof global?global:this); !function(t){if(t.loadCSS){var e=loadCSS.relpreload={};if(e.support=function(){try{return t.document.createElement("link").relList.supports("preload")}catch(t){return!1}},e.poly=function(){for(var e=t.document.getElementsByTagName("link"),r=0;r<e.length;r++){var n=e[r];"preload"===n.rel&&"style"===n.getAttribute("as")&&(t.loadCSS(n.href,n,n.getAttribute("media")),n.rel=null)}},!e.support()){e.poly();var r=t.setInterval(e.poly,300);t.addEventListener&&t.addEventListener("load",function(){e.poly(),t.clearInterval(r)}),t.attachEvent&&t.attachEvent("onload",function(){t.clearInterval(r)})}}}(this); window.disablePushState = false; window.disableDrawer = false; </script> <!--[if lt IE 9]> <script src="https://unpkg.com/html5shiv/dist/html5shiv.min.js"></script> <![endif]--> <!--[if gt IE 8]><!---->
+    <style> article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}*{box-sizing:border-box}html,body{margin:0;padding:0}html{font-size:16px;line-height:1.75}body{color:#333;background-color:#fff;overflow-y:scroll}a{text-decoration:none}.lead{margin-left:-1rem;margin-right:-1rem}img,.img{display:block;max-width:100%;margin-bottom:1rem;border:none}img.lead,.img.lead{max-width:calc(100% + 2rem);width:calc(100% + 2rem)}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.heading{font-weight:bold;text-rendering:optimizeLegibility}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{margin:1.6rem 0 1rem;line-height:1.6}h1,.h1{font-size:2rem;line-height:1.25}h2,.h2{font-size:1.5rem}h3,.h3{font-size:1.17em}p{margin-top:0;margin-bottom:1rem}p.lead{font-size:1.25rem;font-weight:300;padding:0 1rem}ul,ol,dl{margin-top:0;margin-bottom:1rem}ul,ol{padding-left:1.25rem}hr{position:relative;margin:1.5rem 0;border:0;border-top:1px solid #eee}.hr{padding-bottom:.5rem;border-bottom:1px solid #eee;margin-bottom:1.5rem}h4,h5,h6,.h4,.h5,.h6{margin-bottom:0.5rem;font-size:1rem}table{margin-bottom:1rem;width:100%;width:calc(100% + 2rem);margin-left:-1rem;border:1px solid #e5e5e5;border-collapse:collapse;border-spacing:0}td,th{padding:.25rem .5rem;border:1px solid #e5e5e5}td:first-child,th:first-child{padding-left:1rem}td:last-child,th:last-child{padding-right:1rem}thead+tbody,tbody+tbody,tfoot{border-top:3px double #e5e5e5}tbody tr:nth-child(odd) td,tbody tr:nth-child(odd) th{background-color:#f9f9f9}footer{margin-bottom:2rem}.page,.post{margin-bottom:3em}.page li+li,.post li+li{margin-top:.25rem}.page>header,.post>header{margin-bottom:2rem}.page-title,.post-title{margin-top:0}.post-date{display:block;margin-top:-0.5rem;margin-bottom:1rem;color:#9a9a9a}.related-posts{padding-left:0;list-style:none}.related-posts>li,.related-posts>li+li{margin-top:1rem}.related-posts>li>small,.related-posts>li+li>small{font-size:75%;color:#9a9a9a}.message{margin-bottom:1rem;padding:1rem;color:#787878;background-color:#f9f9f9;margin-left:-1rem;margin-right:-1rem}body,main{position:relative;overflow-x:hidden}@media screen{body::before{content:'';background:#e5e5e5;position:absolute;left:0;top:0;bottom:0}}@media screen and (min-width: 40em){html{font-size:17px}}@media screen and (min-width: 54em){html{font-size:16px}}@media screen and (min-width: 88em){html{font-size:17px}}@media screen and (min-width: 125em){html{font-size:18px}}.sr-only{display:none}.clearfix,.sidebar-social::after,.clearafter::after{content:"";display:table;clear:both}a,.a{position:relative;padding-bottom:.15rem;border-style:hidden}.img{overflow:hidden;background-color:#f9f9f9}.img>img{margin:0;width:100%;height:100%}.sixteen-nine{position:relative}.sixteen-nine::before{display:block;content:"";width:100%;padding-top:56.25%}.sixteen-nine>*{position:absolute;top:0;left:0;right:0;bottom:0}h1+hr,h2+hr,h3+hr,h4+hr,h5+hr,h6+hr{margin-top:0}.fade-in{animation-duration:500ms;animation-name:fade-in;animation-fill-mode:forwards}@keyframes fade-in{from{transform:translateY(-2rem);opacity:0}50%{transform:translateY(-2rem);opacity:0}to{transform:translateY(0);opacity:1}}.mb6{margin-bottom:10rem}.sidebar{color:rgba(255,255,255,0.75);text-align:left}.sidebar::before{content:"";position:absolute;z-index:2;top:0;left:0;bottom:0;right:0;background:linear-gradient(to bottom, rgba(32,32,32,0) 0%, rgba(32,32,32,0.5) 100%)}.sidebar a{color:#fff;border-bottom-color:rgba(255,255,255,0.2)}.right-side{width:100%;margin-left:auto;margin-right:auto}.right-side .ad-first{text-align:center}@media screen{.right-side{max-width:38rem;min-height:100vh}.right-side .ad-second{display:none}}@media screen and (min-width: 54em){.right-side{margin-left:20rem;margin-right:1rem;padding:4rem 1rem 12rem}.right-side .ad-second{text-align:center;display:block}}@media screen and (min-width: 72em){.right-side{margin-left:22rem;max-width:42rem}}@media screen and (min-width: 88em){.right-side{width:162px;margin-left:0rem;margin-right:0rem;padding:0rem;margin-top:10rem;display:block;float:left}}@media screen and (min-width: 96em){.right-side{width:300px;margin-right:0rem}}#_yDrawer{position:relative}@media screen{#_yDrawer{min-height:640px;min-height:100vh}}@media screen and (min-width: 54em){#_yDrawer{width:18rem;margin-left:0}}.sidebar-bg{position:absolute;height:100%;overflow:hidden;top:0;right:0;bottom:0;left:0;background:#202020 center / cover}.sidebar-box{display:flex;justify-content:center}.sidebar-sticky{position:relative;z-index:3}@media screen{.sidebar-sticky{-ms-overflow-style:none;overflow:-moz-scrollbars-none;height:100%;overflow:auto;position:absolute;padding:3rem 0rem;right:2.5rem;left:2.5rem}}.sidebar-sticky::-webkit-scrollbar{display:none}.sidebar-about>h1{color:#fff;font-size:2rem}.sidebar-nav>ul{list-style:none;padding-left:0;margin-bottom:.5rem}a.sidebar-nav-item{width:100%;font-weight:normal;display:block;line-height:1.75;padding:.25rem 0;border-bottom:1px solid rgba(255,255,255,0.2)}a.sidebar-nav-subitem{font-weight:normal;display:block;line-height:1.75;padding:.25rem 0;border-bottom:1px solid rgba(255,255,255,0.2)}@media screen{.y-drawer-scrim{z-index:2}.y-drawer-content{width:18rem;left:-18rem;z-index:3}}.sidebar-social{margin-bottom:.5rem}.sidebar-social>ul{list-style:none;padding-left:0;margin:0 -.25rem}.sidebar-social>ul>li{float:left}.sidebar-social>ul>li>a{display:inline-block;text-align:center;font-size:1.6rem;line-height:3rem;width:3.1249rem;height:4rem;padding:.5rem 0}.sidebar-social>ul li+li{margin-top:0}.fixed-top{position:fixed;top:0;left:0;width:100%;z-index:1}.navbar>.content{padding-top:0;padding-bottom:0;min-height:0;height:0}.menu{display:inline-block;padding:1.75rem 1.5rem;border-bottom:none;margin-left:-1.5rem;color:#9a9a9a !important}.menu::after{content:"\2630"}@media screen and (min-width: 54em){.menu{padding:1.25rem 1.5rem;position:absolute;left:-9999px}.menu:focus{position:static}}.animation-main{pointer-events:none}.loading{display:none}@media print{.menu{display:none}}.animation-main{opacity:0;will-change:opacity}.loading{position:absolute;top:0;right:0;padding:5.25rem 4.5rem;transform-origin:top right;transform:scale(0.33)}.content{position:relative;margin-left:auto;margin-right:auto;padding:5rem 1rem 12rem}@media screen{.content{min-height:100vh}}@media screen and (min-width: 54em){.content{padding:4rem 1rem 12rem;margin-left:19rem;margin-right:3rem}}@media screen and (min-width: 72em){.content{max-width:42rem;margin-left:21rem}}@media screen and (min-width: 88em){.content{float:left;width:100%;margin-left:22rem;margin-right:5rem}}@media screen and (min-width: 96em){.content{max-width:44rem}}@media screen and (min-width: 102em){.content{margin-left:25rem;margin-right:8rem}}.me{width:6.5rem;height:6.5rem;align-self:center;margin-right:20px;border-radius:100%;position:relative}@media screen and (min-width: 40em){.me{width:7rem;height:7rem}}@media screen and (min-width: 54em){.me{width:6.5rem;height:6.5rem}}@media screen and (min-width: 72em){.me{width:7rem;height:7rem}}main>footer{width:100%;position:absolute;bottom:0;left:0;right:0;padding:0 1rem;color:#9a9a9a;font-size:smaller;text-align:center}main>footer>p{margin-bottom:0}html{font-family:'Sans-serif'}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.heading{font-family:'Sans-serif'}</style>
+    <link rel="preload" href="/assets/css/common.css?v=6.4.0" as="style" onload="this.rel='stylesheet'">
+    <style id="_pageStyle"> .content a{color:#4f86aa;border-color:rgba(79,134,170,0.2)}.content a:hover{border-color:#4f86aa}:focus{outline-color:#4f86aa}::selection{color:#fff;background:#4f86aa}::-moz-selection{color:#fff;background:#4f86aa}</style>
+    <noscript>
+        <link rel="stylesheet" href="/assets/css/common.css?v=6.4.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <style> html { font-family: 'kakaoRegular', 'Sans-serif' } h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .heading { font-family: 'kakaoRegular', 'Sans-serif' }</style>
 
-Mickey
+    </noscript>
+    <!--<![endif]-->
+<body>
+<div class="navbar fixed-top">
+    <div class="content"> <span class="sr-only">Jump to:</span> <a id="_menu" class="menu no-hover" href="#_title"> <span class="sr-only">Menu</span> </a></div>
+</div>
+<div id="_yPushState">
+    <div class="fade-in">
+        <main id="_main" class="content" role="main" data-color="#4f86aa" data-image="/assets/img/nap.jpg">
+            <article id="post-devlog/2017/03/09/Blog-Jekyll-theme" class="post" role="article">
+                <header>
+                    <h1 class="post-title"> Jekyll Blog 추천 테마 5가지</h1>
+                    <p class="post-date heading"> <time datetime="2017-03-09T00:00:00+00:00">09 Mar 2017</time> in <a href="/category/devlog/" data-flip="title">Devlog</a> on <a href="/tag/devlog-jekyll/" data-flip="title">Jekyll</a>, <span>Blog</span>, <span>Theme</span>, <span>Devlog</span>
+                    <div class="hr" style="padding-bottom:0"></div>
+                </header>
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <div class="markdown-body">
+                    <style> .myAd1190 { display:block; width:98%; height: 280px; } @media(min-width: 600px) { .myAd1190 { display: none; } }</style>
+                    <ins class="adsbygoogle myAd1190" data-ad-client="ca-pub-9134477021095729" data-ad-slot="6559875097" ></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script> <br/>
+                    <p>요즘 Github Pages 기반의 블로그가 많아지고있다.
+                    <p>Jekyll은 Github Pages를 사용하기 쉽게 도와주는 스태틱 사이트 제너레이터이다.
+                    <p>나도 현재 Jekyll을 사용하고 있고 커스텀하기도 쉽고 이미 예쁘게 만들어져 있는 테마도 많다.
+                    <p>이전에 블로그 테마를 고를때 고려해야하는 점들을 소개했는데, 이번엔 직접 추천을 해보려한다.
+                    <h3 id="테마">테마</h3>
+                    <hr />
+                    <p>지킬 테마는 <a href="http://jekyllthemes.org/">이 곳</a>에서 확인할 수 있다.
+                    <p>테마는 이미 사람들이 만들어놓은 틀을 이야기한다. 괜찮은 테마를 받아서 살짝 커스터마이징하면 예쁘고 기능도 탄탄한 사이트를 만들 수 있다.
+                    <p>대부분이 반응형으로 구현되어 있다.
+                    <h3 id="블로그엔-어떤-테마">블로그엔 어떤 테마?</h3>
+                    <hr />
+                    <p><a href="https://isme2n.github.io/jekyll/2017/03/09/Blog-Jekyll/">블로그 테마를 고를때 고려해야 할 점 5가지</a>는 아래와 같다.
+                        <ul>
+                            <li>
+                    <p>첫째, 반응형이어야 한다.
+                        <li>
+                    <p>둘째, 리니어 레이아웃.
+                        <li>
+                    <p>셋째, 공유하기 버튼.
+                        <li>
+                    <p>넷째, 서체.
+                        <li>
+                    <p>다섯째, 댓글.
+                        </ul>
+                    <h3 id="추천-테마">추천 테마</h3>
+                    <hr />
+                    <p>거의 모든 테마를 직접 돌아다녀보고 분석했다. 그 중 추천할만한 테마를 소개해보려 한다.
+                    <p>소개하는 모든 테마는 이름을 클릭하면 데모페이지로 이동한다.
+                    <h3 id="jasper"><a href="https://biomadeira.github.io/jasper/">Jasper</a></h3>
+                    <p>한동안 거의 세계를 재패했던 고스트의 대표적인 테마의 Jekyll판이다. 고스트는 설치형 블로그이기 때문에 진입장벽을 느끼는 분들이 많은데, 그런 때 이 테마는 정말 딱이다.
+                    <p>반응형이며, 리니어하고, 기본적으로 트위터, 페이스북, 구글플러스 공유가 지원되고, 서체도 제목은 산세리프, 내용은 세리프체로 깔끔하다. 여백도 적당하다.
+                    <p>댓글은 지원하지 않지만 개발자라면 댓글 붙이는데 몇분 걸리지 않는다.
+                    <h3 id="long-haul"><a href="http://brianmaierjr.com/long-haul/">Long Haul</a></h3>
+                    <p>요즘 디자인트랜드는 ‘기존의 것들 박살내기’다. 정사각형에서, 그리드에서 벗어나자 뭐 이런내용인데 가장 쉽게 접할 수 있는게 사선또는 다른 도형을 본따서 레이아웃을 조금 바꾸는 거다.
+                    <p>그런의미인지 이 Long Haul도 상단 네비게이션바가 사선이다.
+                    <p>반응형이고, 리니어하며 깔끔한 레이아웃을 지녔다.
+                    <p>공유하기와 댓글은 지원하지 않지만 역시 개발자라면 몇분이면 달 수 있다.
+                    <h3 id="vanilla-bean-creme"><a href="http://richbray.me/frap/vbc/">Vanilla Bean Creme</a></h3>
+                    <p>이 테마는 좀 재미있다. 오직 글. 거의 글을 위해 만들어진 테마라고 할 수 있을 것 같다. 그것도 꽤 긴 분량의 글을 소화했을 때 가장 아름다운 레이아웃을 가지고 있다.
+                    <p>만약에 소설이나 글을 적는게 취미라면, 글에만 집중할 수 있는 이 테마가 최선의 선택아닐까.
+                    <p>반응형, 리니어에 완전 깔끔하다.
+                    <p>공유하기와 댓글은 지원하지 않는다.
+                    <h3 id="clean-blog"><a href="https://blackrockdigital.github.io/startbootstrap-clean-blog/">Clean Blog</a></h3>
+                    <p>이 테마는 현재 내가 쓰고있는 테마이다. 서체도 깔끔하고 레이아웃도 좋다. 흠이라면 줄간격이나 세세한 것들이 좀 아쉽긴한데, 아주 좋은 테마라고 생각한다.
+                    <p>나는 이 테마를 조금 커스텀해서 사용하고있다. 공유하기버튼과 댓글기능을 추가해서 사용중이다.
+                    <p>반응형이고 리니어이며 서체도 괜찮고 깔끔하다.
+                    <p>공유하기와 댓글은 지원하지 않는다.
+                    <h3 id="centrarium"><a href="http://bencentra.com/centrarium/">Centrarium</a></h3>
+                    <p>내가 아마 Clean Blog테마를 사용하지 않았다면 이 테마를 사용하고 있었을거다. 사실 아직도 고민중이다. 서체가 제목은 산세리프였으면 좋겠는데, 그거야 커스텀하면 될 것 같다.
+                    <p>반응형이고 리니어에 아주 깔끔하다. 공유하기와 댓글도 지원한다.
+                    <h3 id="정리하며">정리하며</h3>
+                    <hr />
+                    <p>사실 꽤나 멋지다라고 생각한 테마들은 더 있다. 잠깐 나열해 보면.
+                    <div class="highlighter-rouge">
+                        <div class="highlight">
+                           <pre class="highlight"><code>
 
-Demo : http://vincentchan.github.io/mickey/
-
-Cayman Blog
-
-Demo : http://www.adamdueck.com/cayman-blog/
-
-Airspace
-
-Demo : https://luminousrubyist.github.io/airspace-jekyll/
-
-</code></pre></div></div><p>이 정도.<p>나에게 맞는 테마를 고르고 자신만의 컨텐츠를 작성하자.<p>읽는 사람과 쓰는 사람 모두 즐거운 블로그를 만들 수 있을 것이다. <br/> <br/> <ins class="adsbygoogle" style="display:block; width:100%; height:300px;" data-ad-client="ca-pub-9134477021095729" data-ad-slot="2380354290" data-ad-format="auto"></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script></div><script> </script></article><hr class="dingbat" /><div class="share"><h2>Share this post</h2><div class="share-body"> <a href="http://twitter.com/share?text=Jekyll Blog 추천 테마 5가지&amp;url=https://isme2n.github.io/devlog/2017/03/09/Blog-Jekyll-theme/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"> <span class="icon-twitter"> </span> </a> <a href="https://www.facebook.com/sharer/sharer.php?u=https://isme2n.github.io/devlog/2017/03/09/Blog-Jekyll-theme/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"> <span class="icon-facebook"> </span> </a></div></div><br/><aside class="author" role="complementary"><div class="author"><h2 class="page-title hr"> About</h2><div class="author-body"> <img src="/assets/img/me.jpeg" class="me" alt="aiden min" srcset="/assets/img/me.jpeg 1x,/assets/img/me.jpeg 2x" /><div class="author-body-description"><p>세상에서 가장 게으르기 위해 가장 부지런한 타입. 글쓰는 것과 디자인, 개발을 좋아한다. 좋은게 좋은거고, 예쁜게 좋은거고, 노는게 좋은거라고 생각한다. 좋아하는게 많은 편.</div></div></div></aside><aside class="related" role="complementary"><h2 class="hr">Related Posts</h2><ul class="related-posts"><li class="h4"> <a href="/devlog/2017/11/20/pm2-docker-ruby/" data-flip="title"> <span>PM2와 Docker를 이용한 루비 데몬 관리</span> </a> <small><time datetime="2017-11-20T00:00:00+00:00"> 20 Nov 2017 </time></small><li class="h4"> <a href="/devlog/2017/11/18/machine-learning-10/" data-flip="title"> <span>[머신러닝 배우기] 10. 로지스틱 회귀, SVM</span> </a> <small><time datetime="2017-11-18T00:00:00+00:00"> 18 Nov 2017 </time></small><li class="h4"> <a href="/devlog/2017/11/17/machine-learning-9/" data-flip="title"> <span>[머신러닝 배우기] 9. 군집화, k-중심 군집화, 계층적 군집화, 밀도기반 군집화</span> </a> <small><time datetime="2017-11-17T00:00:00+00:00"> 17 Nov 2017 </time></small></ul></aside><aside class="comments" role="complementary"><h2>Comments</h2><hr/><div id="disqus_thread"></div><script> !function(s,i){function e(e){var t=s.pageYOffset||i.body.scrollTop;s.DISQUS&&!s._disqusThis&&!s._disqusFirst&&t+s.innerHeight>=s._disqusThreadOffsetTop&&(s._disqusThis=!0,s.DISQUS.reset({reload:!0,config:d}))}var d=function(){this.page.title="Jekyll Blog 추천 테마 5가지",this.page.identifier="/devlog/2017/03/09/Blog-Jekyll-theme",this.page.url="https://isme2n.github.io/devlog/2017/03/09/Blog-Jekyll-theme/"};s._disqusFirst=void 0===s._disqusFirst||s._disqusFirst,s._disqusLoading=void 0!==s._disqusLoading&&s._disqusLoading,s._disqusThis=!1,s._disqusThreadOffsetTop=i.getElementById("disqus_thread").offsetTop,s._disqusLoading?s._disqusFirst=!1:(s._disqusLoading=!0,loadJSDeferred("//isme2n.disqus.com/embed.js"),s.addEventListener?s.addEventListener("scroll",e,{passive:!0}):s.attachEvent?s.attachEvent("onscroll",e):s.onscroll=e)}(window,document); </script> <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript></aside><footer><hr/><p>© 2017. by isme2n<p> <code>Powered by <a href="https://isme2n.github.io/">aiden</a></code></footer></main><div class="right-side"><div class="ad-first"> <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <ins class="adsbygoogle" style="display:inline-block;width:100%;" data-ad-client="ca-pub-9134477021095729" data-ad-slot="6559875097" data-ad-format="auto"></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script></div><br/> <br/><div class="ad-second"> <ins class="adsbygoogle" style="display:inline-block;max-width:320px;width:100%;height:600px" data-ad-client="ca-pub-9134477021095729" data-ad-slot="6826803092"></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script></div></div></div><div id="_yDrawer"><div id="_sidebar" class="sidebar"><div class="sidebar-bg" style="background-color:#4f86aa;background-image:url(/assets/img/nap.jpg)"></div><header class="sidebar-sticky" role="banner"> <br/><div class="sidebar-about"><h1><a id="_title" href="/">Aiden</a></h1><p>가장 게으르기위해 가장 부지런한 개발자</div><br/> <br/><nav class="sidebar-nav heading" role="navigation"> <span class="sr-only">Navigation:</span><ul><li> <input type="checkbox" id="list-item-1"/><div class="list-wrapper"> <a class="sidebar-nav-item" href="/category/essay/">Essay</a></div><ul class="list-body"><li> <a class="sidebar-nav-subitem" href="/tag/essay-essay/">Essay</a><li> <a class="sidebar-nav-subitem" href="/tag/essay-startup/">Startup</a></ul><li> <input type="checkbox" id="list-item-2"/><div class="list-wrapper"> <a class="sidebar-nav-item" href="/category/tip/">Tip</a></div><ul class="list-body"><li> <a class="sidebar-nav-subitem" href="/tag/tip-tip/">Tip</a></ul><li> <input type="checkbox" id="list-item-3"/><div class="list-wrapper"> <a class="sidebar-nav-item" href="/category/video/">Video</a> <label class="folder" for="list-item-3">▾</label></div><ul class="list-body"><li> <a class="sidebar-nav-subitem" href="/tag/video-react/">React</a></ul><li> <input type="checkbox" id="list-item-4"/><div class="list-wrapper"> <a class="sidebar-nav-item" href="/category/review/">Review</a> <label class="folder" for="list-item-4">▾</label></div><ul class="list-body"><li> <a class="sidebar-nav-subitem" href="/tag/review-book/">Book</a><li> <a class="sidebar-nav-subitem" href="/tag/review-event/">Event</a><li> <a class="sidebar-nav-subitem" href="/tag/review-things/">Things</a><li> <a class="sidebar-nav-subitem" href="/tag/review-food/">Food</a><li> <a class="sidebar-nav-subitem" href="/tag/review-movie/">Movie</a><li> <a class="sidebar-nav-subitem" href="/tag/review-music/">Music</a></ul><li> <input type="checkbox" id="list-item-5"/><div class="list-wrapper"> <a class="sidebar-nav-item" href="/category/doc/">Documents</a> <label class="folder" for="list-item-5">▾</label></div><ul class="list-body"><li> <a class="sidebar-nav-subitem" href="/tag/doc-48wedding/">48wedding</a><li> <a class="sidebar-nav-subitem" href="/tag/doc-boilerplate/">Boilerplate</a><li> <a class="sidebar-nav-subitem" href="/tag/doc-secreport/">Secreport</a></ul><li> <input type="checkbox" id="list-item-6"/><div class="list-wrapper"> <a class="sidebar-nav-item" href="/category/devlog/">Devlog</a> <label class="folder" for="list-item-6">▾</label></div><ul class="list-body"><li> <a class="sidebar-nav-subitem" href="/tag/devlog-javascript/">JavaScript</a><li> <a class="sidebar-nav-subitem" href="/tag/devlog-ml/">ML</a><li> <a class="sidebar-nav-subitem" href="/tag/devlog-node/">Node.js</a><li> <a class="sidebar-nav-subitem" href="/tag/devlog-react/">React</a><li> <a class="sidebar-nav-subitem" href="/tag/devlog-web/">Web</a><li> <a class="sidebar-nav-subitem" href="/tag/devlog-aws/">AWS</a><li> <a class="sidebar-nav-subitem" href="/tag/devlog-data/">Data</a><li> <a class="sidebar-nav-subitem" href="/tag/devlog-git/">Git</a><li> <a class="sidebar-nav-subitem" href="/tag/devlog-infra/">Infra</a><li> <a class="sidebar-nav-subitem" href="/tag/devlog-linux/">Linux</a><li> <a class="sidebar-nav-subitem" href="/tag/devlog-meteor/">Meteor</a><li> <a class="sidebar-nav-subitem" href="/tag/devlog-vue/">Vue</a><li> <a class="sidebar-nav-subitem" href="/tag/devlog-jekyll/">Jekyll</a><li> <a class="sidebar-nav-subitem" href="/tag/devlog-mongo/">MongoDB</a><li> <a class="sidebar-nav-subitem" href="/tag/devlog-algorithm/">Algorithm</a></ul><li> <input type="checkbox" id="list-item-7"/><div class="list-wrapper"> <a class="sidebar-nav-item" href="/about/">About</a></div><ul class="list-body"><li> <a class="sidebar-nav-subitem" href="/category/artwork/">Artwork</a></ul></ul></nav><br/> <br/><div class="sidebar-box"> <img src="/assets/img/me.jpeg" class="me" alt="aiden min" srcset="/assets/img/me.jpeg 1x,/assets/img/me.jpeg 2x" /></div><p>게으르기 때문에 게발자. 글쓰는 걸 좋아하고, 디자인과 개발을 좋아한다.<div class="sidebar-social"> <span class="sr-only">Social:</span><ul><li> <a href="https://facebook.com/zooqzqz"> <span class="icon-facebook" title="Facebook"></span> <span class="sr-only">Facebook</span> </a><li> <a href="https://github.com/isme2n"> <span class="icon-github" title="GitHub"></span> <span class="sr-only">GitHub</span> </a><li> <a href="mailto:zooqzqz@gmail.com"> <span class="icon-mail" title="Email"></span> <span class="sr-only">Email</span> </a><li> <a href="https://isme2n.github.io/feed.xml"> <span class="icon-rss2" title="RSS"></span> <span class="sr-only">RSS</span> </a></ul></div></header></div></div></div><script> window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date; ga('create', 'UA-92346434-1', 'auto'); ga('send', 'pageview'); loadJSDeferred('https://www.google-analytics.com/analytics.js'); </script> <!--[if gt IE 8]><!----> <script src="//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script> <script> WebFont.load({ google: { families: 'Lato'.split('|') }, custom: { families: ['icomoon'], urls: ['/assets/icomoon/style.css'] } }); </script> <!--<![endif]--> <!--[if gt IE 9]><!----> <script>loadJSDeferred('/assets/js/hydejack.js?v=6.4.0');</script> <!--<![endif]-->
+</code></pre>
+                        </div>
+                    </div>
+                    <p>이 정도.
+                    <p>나에게 맞는 테마를 고르고 자신만의 컨텐츠를 작성하자.
+                    <p>
+                        읽는 사람과 쓰는 사람 모두 즐거운 블로그를 만들 수 있을 것이다. <br/> <br/> <ins class="adsbygoogle" style="display:block; width:100%; height:300px;" data-ad-client="ca-pub-9134477021095729" data-ad-slot="2380354290" data-ad-format="auto"></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
+                </div>
+                <script> </script>
+            </article>
+            <hr class="dingbat" />
+            <div class="share">
+                <h2>Share this post</h2>
+                <div class="share-body"> <a href="http://twitter.com/share?text=Jekyll Blog 추천 테마 5가지&amp;url=https://isme2n.github.io/devlog/2017/03/09/Blog-Jekyll-theme/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"> <span class="icon-twitter"> </span> </a> <a href="https://www.facebook.com/sharer/sharer.php?u=https://isme2n.github.io/devlog/2017/03/09/Blog-Jekyll-theme/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"> <span class="icon-facebook"> </span> </a></div>
+            </div>
+            <br/>
+            <aside class="author" role="complementary">
+                <div class="author">
+                    <h2 class="page-title hr"> About</h2>
+                    <div class="author-body">
+                        <img src="/assets/img/me.jpeg" class="me" alt="aiden min" srcset="/assets/img/me.jpeg 1x,/assets/img/me.jpeg 2x" />
+                        <div class="author-body-description">
+                            <p>세상에서 가장 게으르기 위해 가장 부지런한 타입. 글쓰는 것과 디자인, 개발을 좋아한다. 좋은게 좋은거고, 예쁜게 좋은거고, 노는게 좋은거라고 생각한다. 좋아하는게 많은 편.
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <aside class="related" role="complementary">
+                <h2 class="hr">Related Posts</h2>
+                <ul class="related-posts">
+                    <li class="h4"> <a href="/devlog/2017/11/20/pm2-docker-ruby/" data-flip="title"> <span>PM2와 Docker를 이용한 루비 데몬 관리</span> </a> <small><time datetime="2017-11-20T00:00:00+00:00"> 20 Nov 2017 </time></small>
+                    <li class="h4"> <a href="/devlog/2017/11/18/machine-learning-10/" data-flip="title"> <span>[머신러닝 배우기] 10. 로지스틱 회귀, SVM</span> </a> <small><time datetime="2017-11-18T00:00:00+00:00"> 18 Nov 2017 </time></small>
+                    <li class="h4"> <a href="/devlog/2017/11/17/machine-learning-9/" data-flip="title"> <span>[머신러닝 배우기] 9. 군집화, k-중심 군집화, 계층적 군집화, 밀도기반 군집화</span> </a> <small><time datetime="2017-11-17T00:00:00+00:00"> 17 Nov 2017 </time></small>
+                </ul>
+            </aside>
+            <aside class="comments" role="complementary">
+                <h2>Comments</h2>
+                <hr/>
+                <div id="disqus_thread"></div>
+                <script> !function(s,i){function e(e){var t=s.pageYOffset||i.body.scrollTop;s.DISQUS&&!s._disqusThis&&!s._disqusFirst&&t+s.innerHeight>=s._disqusThreadOffsetTop&&(s._disqusThis=!0,s.DISQUS.reset({reload:!0,config:d}))}var d=function(){this.page.title="Jekyll Blog 추천 테마 5가지",this.page.identifier="/devlog/2017/03/09/Blog-Jekyll-theme",this.page.url="https://isme2n.github.io/devlog/2017/03/09/Blog-Jekyll-theme/"};s._disqusFirst=void 0===s._disqusFirst||s._disqusFirst,s._disqusLoading=void 0!==s._disqusLoading&&s._disqusLoading,s._disqusThis=!1,s._disqusThreadOffsetTop=i.getElementById("disqus_thread").offsetTop,s._disqusLoading?s._disqusFirst=!1:(s._disqusLoading=!0,loadJSDeferred("//isme2n.disqus.com/embed.js"),s.addEventListener?s.addEventListener("scroll",e,{passive:!0}):s.attachEvent?s.attachEvent("onscroll",e):s.onscroll=e)}(window,document); </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+            </aside>
+            <footer>
+                <hr/>
+                <p>© 2017. by isme2n
+                <p> <code>Powered by <a href="https://isme2n.github.io/">aiden</a></code>
+            </footer>
+        </main>
+        <div class="right-side">
+            <div class="ad-first">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <ins class="adsbygoogle" style="display:inline-block;width:100%;" data-ad-client="ca-pub-9134477021095729" data-ad-slot="6559875097" data-ad-format="auto"></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
+            </div>
+            <br/> <br/>
+            <div class="ad-second">
+                <ins class="adsbygoogle" style="display:inline-block;max-width:320px;width:100%;height:600px" data-ad-client="ca-pub-9134477021095729" data-ad-slot="6826803092"></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
+            </div>
+        </div>
+    </div>
+    <div id="_yDrawer">
+        <div id="_sidebar" class="sidebar">
+            <div class="sidebar-bg" style="background-color:#4f86aa;background-image:url(/assets/img/nap.jpg)"></div>
+            <header class="sidebar-sticky" role="banner">
+                <br/>
+                <div class="sidebar-about">
+                    <h1><a id="_title" href="/">Aiden</a></h1>
+                    <p>가장 게으르기위해 가장 부지런한 개발자
+                </div>
+                <br/> <br/>
+                <nav class="sidebar-nav heading" role="navigation">
+                    <span class="sr-only">Navigation:</span>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="list-item-1"/>
+                            <div class="list-wrapper"> <a class="sidebar-nav-item" href="/category/essay/">Essay</a></div>
+                            <ul class="list-body">
+                                <li> <a class="sidebar-nav-subitem" href="/tag/essay-essay/">Essay</a>
+                                <li> <a class="sidebar-nav-subitem" href="/tag/essay-startup/">Startup</a>
+                            </ul>
+                        <li>
+                            <input type="checkbox" id="list-item-2"/>
+                            <div class="list-wrapper"> <a class="sidebar-nav-item" href="/category/tip/">Tip</a></div>
+                            <ul class="list-body">
+                                <li> <a class="sidebar-nav-subitem" href="/tag/tip-tip/">Tip</a>
+                            </ul>
+                        <li>
+                            <input type="checkbox" id="list-item-3"/>
+                            <div class="list-wrapper"> <a class="sidebar-nav-item" href="/category/video/">Video</a> <label class="folder" for="list-item-3">▾</label></div>
+                            <ul class="list-body">
+                                <li> <a class="sidebar-nav-subitem" href="/tag/video-react/">React</a>
+                            </ul>
+                        <li>
+                            <input type="checkbox" id="list-item-4"/>
+                            <div class="list-wrapper"> <a class="sidebar-nav-item" href="/category/review/">Review</a> <label class="folder" for="list-item-4">▾</label></div>
+                            <ul class="list-body">
+                                <li> <a class="sidebar-nav-subitem" href="/tag/review-book/">Book</a>
+                                <li> <a class="sidebar-nav-subitem" href="/tag/review-event/">Event</a>
+                                <li> <a class="sidebar-nav-subitem" href="/tag/review-things/">Things</a>
+                                <li> <a class="sidebar-nav-subitem" href="/tag/review-food/">Food</a>
+                                <li> <a class="sidebar-nav-subitem" href="/tag/review-movie/">Movie</a>
+                                <li> <a class="sidebar-nav-subitem" href="/tag/review-music/">Music</a>
+                            </ul>
+                        <li>
+                            <input type="checkbox" id="list-item-5"/>
+                            <div class="list-wrapper"> <a class="sidebar-nav-item" href="/category/doc/">Documents</a> <label class="folder" for="list-item-5">▾</label></div>
+                            <ul class="list-body">
+                                <li> <a class="sidebar-nav-subitem" href="/tag/doc-48wedding/">48wedding</a>
+                                <li> <a class="sidebar-nav-subitem" href="/tag/doc-boilerplate/">Boilerplate</a>
+                                <li> <a class="sidebar-nav-subitem" href="/tag/doc-secreport/">Secreport</a>
+                            </ul>
+                        <li>
+                            <input type="checkbox" id="list-item-6"/>
+                            <div class="list-wrapper"> <a class="sidebar-nav-item" href="/category/devlog/">Devlog</a> <label class="folder" for="list-item-6">▾</label></div>
+                            <ul class="list-body">
+                                <li> <a class="sidebar-nav-subitem" href="/tag/devlog-javascript/">JavaScript</a>
+                                <li> <a class="sidebar-nav-subitem" href="/tag/devlog-ml/">ML</a>
+                                <li> <a class="sidebar-nav-subitem" href="/tag/devlog-node/">Node.js</a>
+                                <li> <a class="sidebar-nav-subitem" href="/tag/devlog-react/">React</a>
+                                <li> <a class="sidebar-nav-subitem" href="/tag/devlog-web/">Web</a>
+                                <li> <a class="sidebar-nav-subitem" href="/tag/devlog-aws/">AWS</a>
+                                <li> <a class="sidebar-nav-subitem" href="/tag/devlog-data/">Data</a>
+                                <li> <a class="sidebar-nav-subitem" href="/tag/devlog-git/">Git</a>
+                                <li> <a class="sidebar-nav-subitem" href="/tag/devlog-infra/">Infra</a>
+                                <li> <a class="sidebar-nav-subitem" href="/tag/devlog-linux/">Linux</a>
+                                <li> <a class="sidebar-nav-subitem" href="/tag/devlog-meteor/">Meteor</a>
+                                <li> <a class="sidebar-nav-subitem" href="/tag/devlog-vue/">Vue</a>
+                                <li> <a class="sidebar-nav-subitem" href="/tag/devlog-jekyll/">Jekyll</a>
+                                <li> <a class="sidebar-nav-subitem" href="/tag/devlog-mongo/">MongoDB</a>
+                                <li> <a class="sidebar-nav-subitem" href="/tag/devlog-algorithm/">Algorithm</a>
+                            </ul>
+                        <li>
+                            <input type="checkbox" id="list-item-7"/>
+                            <div class="list-wrapper"> <a class="sidebar-nav-item" href="/about/">About</a></div>
+                            <ul class="list-body">
+                                <li> <a class="sidebar-nav-subitem" href="/category/artwork/">Artwork</a>
+                            </ul>
+                    </ul>
+                </nav>
+                <br/> <br/>
+                <div class="sidebar-box"> <img src="/assets/img/me.jpeg" class="me" alt="aiden min" srcset="/assets/img/me.jpeg 1x,/assets/img/me.jpeg 2x" /></div>
+                <p>게으르기 때문에 게발자. 글쓰는 걸 좋아하고, 디자인과 개발을 좋아한다.
+                <div class="sidebar-social">
+                    <span class="sr-only">Social:</span>
+                    <ul>
+                        <li> <a href="https://facebook.com/zooqzqz"> <span class="icon-facebook" title="Facebook"></span> <span class="sr-only">Facebook</span> </a>
+                        <li> <a href="https://github.com/isme2n"> <span class="icon-github" title="GitHub"></span> <span class="sr-only">GitHub</span> </a>
+                        <li> <a href="mailto:zooqzqz@gmail.com"> <span class="icon-mail" title="Email"></span> <span class="sr-only">Email</span> </a>
+                        <li> <a href="https://isme2n.github.io/feed.xml"> <span class="icon-rss2" title="RSS"></span> <span class="sr-only">RSS</span> </a>
+                    </ul>
+                </div>
+            </header>
+        </div>
+    </div>
+</div>
+<script> window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date; ga('create', 'UA-92346434-1', 'auto'); ga('send', 'pageview'); loadJSDeferred('https://www.google-analytics.com/analytics.js'); </script> <!--[if gt IE 8]><!----> <script src="//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script> <script> WebFont.load({ google: { families: 'Lato'.split('|') }, custom: { families: ['icomoon'], urls: ['/assets/icomoon/style.css'] } }); </script> <!--<![endif]--> <!--[if gt IE 9]><!----> <script>loadJSDeferred('/assets/js/hydejack.js?v=6.4.0');</script> <!--<![endif]-->
 </html>

@@ -5,12 +5,12 @@ meta_description: "Your New Jekyll Site, Blogging about stuffs"
 markdown: kramdown
 highlighter: pygments
 logo: false
-paginate: 15
+paginate: 20
 baseurl: /
 domain_name: 'https://zaneiru.github.io/'
 google_analytics: 'UA-XXXXXXXX-X'
 gems: [jekyll-paginate]
-
+url: 'https://zaneiru.github.io/'
 # Details for the RSS feed generator
 url:            'blog url'
 author:         'Your Name'
