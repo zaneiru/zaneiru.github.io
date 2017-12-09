@@ -1,16 +1,21 @@
-name: Your New Jekyll Site
-description: Blogging about stuffs
-meta_description: "Your New Jekyll Site, Blogging about stuffs"
+# Site settings
+title: Travelog
+subtitle: "Journal of [name]"
+email: your-email@domain.com
+description: "Make the footer happy by entering a short description about yourself here"
+baseurl: ""
+url: "http://yourdomain.com"
+twitter_username: "rowanoulton"
+github_username:  "rowanoulton"
+instagram_username: "rowanoulton"
 
+# Build settings
 markdown: kramdown
-highlighter: pygments
-logo: false
-paginate: 20
-baseurl: /
-domain_name: 'https://zaneiru.github.io/'
-google_analytics: 'UA-XXXXXXXX-X'
-gems: [jekyll-paginate]
-url: 'https://zaneiru.github.io/'
-# Details for the RSS feed generator
-url:            'blog url'
-author:         'Your Name'
+permalink: pretty
+
+# Pagination
+paginate: 5
+
+# Sass
+sass:
+    style: :compressed
