@@ -13,9 +13,11 @@ $focusColour: #fa407a;
 $captionColour: #aaaaaa;
 $white: #ffffff;
 
+@font-face{font-family:'kakaoRegular'; src:url('../assets/fonts/kakaoRegular.woff')}
+
 // Typography
 $bodytype: (
-  font-family: 'Georgia, serif',
+  font-family: 'kakaoRegular',
   regular: 400,
   bold: 700,
   italic: italic,
@@ -23,14 +25,14 @@ $bodytype: (
 );
 
 $headingtype: (
-  font-family: '"Merriweather", serif',
+  font-family: '"kakaoRegular"',
   regular: 400,
   bold: 700,
   cap-height: 0.75
 );
 
 $monospacetype: (
-  font-family: 'Menlo, monospace',
+  font-family: 'kakaoRegular, Menlo, monospace',
   regular: 400,
   cap-height: 0.68
 );
