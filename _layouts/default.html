@@ -1,22 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ site.lang | default: "en-US" }}">
+	<head>
+		<!-- General meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-{% include head.html %}
+		{% if page.indexing == false %}
+			<meta name="robots" content="noindex">
+		{% endif %}
 
-<body>
-  <div class="row">
-    <div class="col s12 m3">
-      <div class="table cover">
-        {% include sidebar.html %}
-      </div>
-    </div>
-    <div class="col s12 m9">
-      <div class="post-listing">
-        {{ content }}
-        {% include footer.html %}
-      </div>
-    </div>
-  </div>
-  {% include js.html %}
-</body>
+		{% if page.collectionpage %}
+			{% seo title=false %}
+
+			{% assign collectiondata = site.collections | where: "label", page.collectionpage | first %}
+			<title>{{ collectiondata.title }} - {{ site.title }}</title>
+			<meta property="og:title" content="{{ collectiondata.title }}">
+			<meta name="description" content="{{ collectiondata.description }}">
+			<meta property="og:description" content="{{ collectiondata.description }}">
+		{% else %}
+			{% seo %}
+		{% endif %}
+
+    <link rel="stylesheet" href="{{ "/assets/styles.css" | relative_url }}">
+
+		{% if site.avatarurl %}{% include site-favicons.html %}{% endif %}
+	</head>
+	<body class="layout-{{ page.layout }}{% if page.title %}  {{ page.title | slugify }}{% endif %}">
+		{% include site-icons.svg %}
+
+		{{ content }}
+
+	</body>
 </html>
