@@ -59,7 +59,7 @@ collections:
   posts:
     title: Posts # Needed for Siteleaf
     output: true
-    description: "My thoughts and ideas" # The post list page content
+    description: "My thoughts and ideas, passions" # The post list page content
     feature_text: |
       Welcome to the blog
     feature_image: "/assets/images/photo-1444703686981-a3abbc4d4fe3.jpg"
@@ -72,12 +72,12 @@ defaults:
 
 # 7. Site settings
 encoding: utf-8 # Make sure the encoding is right
-lang: ko-Kr # Set the site language
+lang: ko-KR # Set the site language
 title: "Alembic" # Site name or title, also used in jekyll-seo-tag
 logo: "/assets/images/logo_start_yellow.jpg" # Site logo, also used in jekyll-seo-tag
 description: "Alembic is a starting point for Jekyll projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately" # Site description and default description, also used in jekyll-seo-tag
 url: "https://alembic.darn.es" # Site url, also used in jekyll-seo-tag
-baseurl: ""
+baseurl: "https://zaneiru.github.io/blog/"
 repo: "https://github.com/daviddarnes/alembic"
 email: "me@daviddarnes.com"
 # disqus: "alembic-1" # Blog post comments, uncomment the option and set the site ID from your Disqus account
