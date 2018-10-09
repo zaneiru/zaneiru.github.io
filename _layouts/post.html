@@ -2,24 +2,23 @@
 layout: default
 ---
 
-{% include site-header.html %}
+<section class="intro">
 
-<main class="main  container">
+	<div class="wrap">
 
-	<article class="article  article--post  content  typeset">
+		<h1>{{ page.title }}</h1>
+		<p>{{ page.date | date_to_long_string }}</p>
 
-    <h1>{{ page.title }}</h1>
-		{% include post-meta.html %}
-    {{ content }}
+	</div>
 
-		{% include nav-share.html %}
+</section>
 
-		{% include post-comments.html %}
+<section class="single">
 
-  </article>
+	<div class="wrap">
 
-	{% if page.aside == true %}{% include site-aside.html %}{% endif %}
+		{{ page.content }}
 
-</main>
+	</div>
 
-{% include site-footer.html %}
+</section>
