@@ -11,3 +11,7 @@ The complete distilling apparatus consists of three parts: the "cucurbit" (Arabi
 Retorts have the "cap" and the "cucurbit" made into one. The anbik is also called the raʾs (head) of the cucurbit. The liquid in the cucurbit is heated or boiled; the vapour rises into the anbik, where it cools by contact with the walls and condenses, running down the spout into the receiver. A modern descendant of the alembic is the pot still, used to produce distilled beverages.
 
 _Originally from [Alembic - Wikipedia](https://en.wikipedia.org/wiki/Alembic)_
+
+<div>
+이 포스트에서는 **프로비저닝<Provisioning>** 이 어떠한 개념인지 파악하고 근래 엔지니어들이 사용하고 있는 **프로비저닝<Provisioning>** 의 기술엔 어떤 것들이 있는지 몇 가지 정도만 파악해 본다.
+</div>
